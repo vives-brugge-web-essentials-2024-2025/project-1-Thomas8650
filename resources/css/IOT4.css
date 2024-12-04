@@ -1,0 +1,248 @@
+/* CSS reset code */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset,form,label,legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* Algemene opmaak 
+heeft ivloed op het hele bestand*/
+body {
+    width: 90%;
+    margin: 10px  auto ; /*verticaal  horizontaal*/
+    font-family: Arial, sans-serif;
+    font-size: 16px;/* grote lettertype*/
+    color: #050505;/* alle tekst in het bestand*/
+    background-color: #f5f5f5;
+  }
+  /* voor alle titels*/
+  h1  {
+    text-align: center;
+    color: #3625ce;
+    font-size: 50px;
+  }
+   h2 {
+    text-align: center;
+    color: #3625ce;
+    font-size: 25px;
+  }
+  /* navigatibalk*/
+  /* afbeelding header*/
+  .header-container {
+    background: url("/resources/afbeeldingen/header\ klimaat.jpg") no-repeat center center/cover;
+    color: #c9cad1;/* tekst slogon*/
+    text-align: center;
+    padding: 120px 120px;
+    height: 150px;
+  }
+
+  /* kleur navigatiebalk*/
+  .navbar {
+    background-color: #8ff18f;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  /* Styling voor de navigatiebalk */
+.navbar ul {
+  list-style: none; /* Verwijdert standaard opsommingstekens bij de lijstitems */
+  display: flex; /* Zet de lijstitems naast elkaar op één regel */
+  justify-content: center; /* Centreert de lijstitems horizontaal */
+}
+
+/* Styling voor de links in de navigatiebalk */
+.navbar ul li a {
+  color: #fff; 
+  padding: 20px 50px; /* Voegt ruimte toe binnen de links (boven/onder en links/rechts) */
+  display: block; /* Maakt de hele link klikbaar (niet alleen de tekst) */
+}
+
+/* Styling voor hover-effect op links */
+.navbar ul li a:hover {
+  background-color: #2eef2e; 
+  border-radius: 2px; /* Geeft afgeronde hoeken aan de achtergrondkleur */
+}
+/* voor ons sectie 1*/
+.about{
+  display: flex;
+  align-items: flex-start; /* zorgt dat tekst en aflbeelding bovenaan lijnen*/
+  margin-top: 10 px;
+}
+/* klimaatverandering sectie 2*/
+.klimaat{
+  display: flex;
+  align-items: flex-start; /* zorgt dat tekst en aflbeelding bovenaan lijnen*/
+  margin-top: 10 px;
+  gap: 20px; /* Ruimte tussen de afbeelding en de tekst */
+  
+
+}
+/* Algemene container styling */
+.container {
+  margin: 20px auto; /* Centreet de container en voegt verticale ruimte toe */
+  padding: 20px; /* Voegt ruimte toe binnen de container */
+  background-color: #f5f1f1; 
+  border-radius: 10px; /* Maakt de hoeken afgerond */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Geeft een zachte schaduw onder de container */
+}
+
+
+
+/* Styling voor schaduweffect van tekst in de header */
+.header-container h1, .header-container p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Voegt een donkere schaduw toe aan de tekst */
+}
+
+/* Styling voor secties */
+section {
+  background-color: #f9f9f9; /* Stelt de standaard achtergrondkleur van secties in */
+}
+
+/* Wisselt achtergrondkleur voor elke even sectie */
+section:nth-child(even) {
+  background-color: #e1e2e3; 
+}
+
+/* Styling voor afbeeldingen  */
+.afbeelding {
+  max-width: 100%; /* Zorgt dat de afbeelding nooit breder is dan de container */
+  height: auto; /* Houdt de beeldverhoudingen intact */
+  border: 1px solid #0b0b0b; /* Geeft een lichtgrijze rand aan de afbeelding */
+  border-radius: 5px; /* Geeft de afbeelding afgeronde hoeken */
+  margin: 10px 0; /* Voegt ruimte toe boven en onder de afbeelding */
+}
+
+/* Styling voor kolommen in sectie 3 */
+.columns {
+  display: flex; /* Plaatst de kolommen naast elkaar */
+  gap: 20px; /* Voegt ruimte toe tussen de kolommen */
+}
+
+.columns div {
+  flex: 1; /* Zorgt dat de kolommen gelijke breedte hebben */
+  text-align: center; /* Centreert tekst in de kolommen */
+}
+
+/* Styling voor de contactcontainer */
+.contact-container {
+  display: flex; /* Plaatst de contactinformatie en het formulier naast elkaar */
+  max-width: 900px; 
+  margin: auto; /* Centreert de container horizontaal */
+  border-radius: 10px; 
+  overflow: hidden; /* Zorgt dat de inhoud niet buiten de container steekt */
+  text-shadow: rgba(0, 0, 0, 0.455) 2px 2px 9px; /* Voegt een schaduw toe aan de tekst */
+}
+
+/* Styling voor de contactinformatie */
+.contact-info {
+  flex: 1; /* Zorgt dat dit gedeelte de helft van de container inneemt */
+  background-color: #f1eeee; /* Lichtgrijze achtergrondkleur */
+  padding: 20px; /* Voegt binnenruimte toe */
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  color: #000000; /* Maakt de koptekst zwart */
+}
+
+.contact-info p,
+.contact-info a {
+  color: #272626; /* Donkergrijze tekstkleur */
+  margin: 10px 0; /* Ruimte boven en onder tekst */
+  display: flex; /* Zorgt dat tekst en iconen op dezelfde regel staan */
+  align-items: center; /* Centreert de iconen verticaal met de tekst */
+}
+/* iconen*/
+.contact-info img {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 10px; /* Ruimte tussen het icoon en de tekst */
+}
+
+/* Styling voor social media iconen */
+.social-icons a {
+  margin-right: 10px; /* Ruimte tussen iconen */
+  display: inline-block; /* Zorgt dat iconen naast elkaar staan */
+}
+
+/* Styling voor het contactformulier */
+.contact-form {
+  flex: 1; /* Zorgt dat het formulier de helft van de container inneemt */
+  padding: 20px; /* Binnenruimte van het formulier */
+  background-color: #2eef2e; 
+  color: #fff; 
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  color: #fff; 
+}
+
+/* Styling voor invoervelden in het formulier */
+.input-group {
+  display: flex; /* Plaatst invoervelden en iconen naast elkaar */
+  align-items: center; /* Centreert de iconen verticaal */
+  margin-bottom: 15px; /* Ruimte onder elke invoergroep */
+  background-color: #12ab12; 
+  padding: 5px; /* Binnenruimte binnen de invoergroep */
+  border-radius: 4px; 
+}
+
+.input-group img {
+  width: 20px; /* Breedte van het icoon */
+  height: 20px; /* Hoogte van het icoon */
+  margin-right: 10px; /* Ruimte tussen het icoon en het invoerveld */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 95%; 
+  padding: 10px; /* Binnenruimte binnen de velden */
+  border: none; 
+  border-radius: 4px; 
+  background-color: #17b417; 
+  color: #fff; 
+}
+
+/* Styling voor de verzendknop */
+.contact-form button {
+  width: 100%; /* Laat de knop de volledige breedte van de container innemen */
+  padding: 10px; /* Binnenruimte van de knop */
+  background-color: #2c2b2b; /* Donkergrijze achtergrondkleur */
+  box-shadow: #767373 0 0 5px; /* Schaduw rond de knop */
+  color: #fff; /* Witte tekstkleur */
+  cursor: pointer; /* Geeft aan dat de knop klikbaar is */
+  border-radius: 4px; /* Afgeronde hoeken */
+  transition: background-color 0.3s ease; /* Soepel overgangseffect bij hover */
+  margin-top: 10px; /* Ruimte boven de knop */
+}
+
+.contact-form button:hover {
+  background-color: #666; /* Verandert de achtergrondkleur bij hover */
+}
+.link{
+  color: rgb(6, 6, 6);
+}
+
+/* Styling voor de footer */
+footer {
+  text-align: center; /* Centreert tekst in de footer */
+  padding: 10px; /* Binnenruimte van de footer */
+  background-color: #d3d1d1; /* Lichtgrijze achtergrondkleur */
+  color: #333333; /* Donkergrijze tekstkleur */
+  font-size: 10px;
+}
