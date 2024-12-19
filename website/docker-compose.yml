@@ -2,7 +2,7 @@ services:
   httpd:
     image: httpd:latest
     ports:
-      - "81:81"
+      - "80:80"
     volumes:
       - ./website:/usr/local/apache2/htdocs
     restart: always
